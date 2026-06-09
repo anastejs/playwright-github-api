@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-GITHUB_USER = os.getenv("GITHUB_USER")
-GITHUB_REPO = os.getenv("GITHUB_REPO")
-GITHUB_ACCESS_TOKEN= os.getenv("GITHUB_ACCESS_TOKEN")
+GITHUB_USER = os.getenv("GIT_USER")
+GITHUB_REPO = os.getenv("GIT_REPO")
+GITHUB_ACCESS_TOKEN= os.getenv("GIT_ACCESS_TOKEN")
 
 # тест 1 - создаем новое issue в репозитории
 def test_create_issue(api_context: APIRequestContext):        # получаем API-клиент
