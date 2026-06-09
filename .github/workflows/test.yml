@@ -18,7 +18,7 @@ jobs:
         - name: Install dependencies 
           run: |
             python -m pip install --upgrade pip
-            pip install pytest-playwright      
+            pip install -r requirements.txt    
 
         - name: Ensure browser are installed
           run: python -m playwright install chromium --with-deps   # with all required system dependencies (Linux packages, libraries, fonts)
