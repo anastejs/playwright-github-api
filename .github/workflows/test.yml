@@ -24,8 +24,8 @@ jobs:
           run: python -m playwright install chromium --with-deps   # with all required system dependencies (Linux packages, libraries, fonts)
           
         - name: Run tests
-          env:  ё1243ы Б
-            GITHUB_ACCESS_TOKEN: ${{ secrets.GITHUB_ACCESS_TOKEN }}
-            GITHUB_USER: ${{ secrets.GITHUB_USER }}
-            GITHUB_REPO: ${{ secrets.GITHUB_REPO }}
+          env: 
+            GITHUB_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
+            GITHUB_USER: ${{ secrets.GIT_USER }}
+            GITHUB_REPO: ${{ secrets.GIT_REPO }}
           run: pytest 
