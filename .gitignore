@@ -1,0 +1,13 @@
+# caches
+__pycache__
+.pytest_cache
+
+# virtual environment
+venv
+
+# IDE 
+.vscode/
+.idea/
+
+# credentials
+creds.py
