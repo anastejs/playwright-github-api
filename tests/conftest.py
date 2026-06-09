@@ -1,6 +1,14 @@
 import pytest
 # from creds import *
 from playwright.sync_api import *
+# for loading variables from .env file
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+GITHUB_USER = os.getenv("GIT_USER")
+GITHUB_REPO = os.getenv("GIT_REPO")
+GITHUB_ACCESS_TOKEN= os.getenv("GIT_ACCESS_TOKEN")
 
 
 @pytest.fixture(scope="session")                            # session - создать один раз, использовать для всех тестов и закрыть в конце
