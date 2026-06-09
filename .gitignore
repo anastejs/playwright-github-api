@@ -11,3 +11,4 @@ venv
 
 # credentials
 creds.py
+.env

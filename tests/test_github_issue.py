@@ -1,6 +1,13 @@
 from creds import *
 from playwright.sync_api import APIRequestContext, Page
+# for loading variables from .env file
+from dotenv import load_dotenv
+import os
 
+load_dotenv()
+GITHUB_USER = os.getenv("GITHUB_USER")
+GITHUB_REPO = os.getenv("GITHUB_REPO")
+GITHUB_ACCESS_TOKEN= os.getenv("GITHUB_ACCESS_TOKEN")
 
 # тест 1 - создаем новое issue в репозитории
 def test_create_issue(api_context: APIRequestContext):        # получаем API-клиент
