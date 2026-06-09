@@ -1,4 +1,4 @@
-from creds import *
+# from creds import *
 from playwright.sync_api import APIRequestContext, Page
 # for loading variables from .env file
 from dotenv import load_dotenv
